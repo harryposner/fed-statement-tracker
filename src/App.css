@@ -4,34 +4,35 @@
   padding: 2rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: inherit;
 }
 
 .app-header {
   text-align: center;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
-  border-bottom: 2px solid #e5e5e5;
+  border-bottom: 2px solid light-dark(#e5e5e5, #404040);
 }
 
 .app-header h1 {
   margin: 0;
-  color: #1a365d;
+  color: inherit;
   font-size: 2.5rem;
   font-weight: 700;
 }
 
 .app-header p {
   margin: 0.5rem 0 0;
-  color: #666;
+  opacity: 0.8;
   font-size: 1.1rem;
 }
 
 .controls-section {
-  background: #f8f9fa;
+  background: light-dark(#f8f9fa, #2a2a2a);
   padding: 1.5rem;
   border-radius: 8px;
   margin-bottom: 2rem;
+  border: 1px solid light-dark(#e5e5e5, #404040);
 }
 
 .filter-controls {
@@ -49,14 +50,16 @@
 
 .filter-group label {
   font-weight: 600;
-  color: #374151;
+  color: inherit;
 }
 
 .filter-group select {
   padding: 0.5rem;
-  border: 1px solid #d1d5db;
+  border: 1px solid light-dark(#d1d5db, #404040);
   border-radius: 4px;
   font-size: 0.9rem;
+  background: light-dark(white, #1a1a1a);
+  color: inherit;
 }
 
 .statement-selector {
@@ -64,25 +67,32 @@
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   align-items: start;
+  min-width: 0; /* Prevents grid items from overflowing */
 }
 
 .selector-group {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  min-width: 0; /* Allows flex item to shrink */
 }
 
 .selector-group label {
   font-weight: 600;
-  color: #374151;
+  color: inherit;
 }
 
 .selector-group select {
   padding: 0.75rem;
-  border: 1px solid #d1d5db;
+  border: 1px solid light-dark(#d1d5db, #404040);
   border-radius: 4px;
   font-size: 1rem;
-  background: white;
+  background: light-dark(white, #1a1a1a);
+  color: inherit;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .selection-summary {
@@ -90,13 +100,14 @@
   text-align: center;
   margin-top: 1rem;
   padding: 1rem;
-  background: #e0f2fe;
+  background: light-dark(#e0f2fe, #1e3a8a);
   border-radius: 4px;
+  color: light-dark(#1e40af, #bfdbfe);
 }
 
 .diff-section {
-  background: white;
-  border: 1px solid #e5e5e5;
+  background: light-dark(white, #1a1a1a);
+  border: 1px solid light-dark(#e5e5e5, #404040);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -113,7 +124,7 @@
 
 .diff-panel {
   padding: 1.5rem;
-  border-right: 1px solid #e5e5e5;
+  border-right: 1px solid light-dark(#e5e5e5, #404040);
 }
 
 .diff-panel:last-child {
@@ -123,9 +134,9 @@
 .diff-panel h3 {
   margin: 0 0 1rem;
   font-size: 1.1rem;
-  color: #374151;
+  color: inherit;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid light-dark(#e5e5e5, #404040);
 }
 
 .diff-content {
@@ -135,15 +146,15 @@
 }
 
 .diff-content mark.diff-added {
-  background: #dcfce7;
-  color: #166534;
+  background: light-dark(#dcfce7, #22c55e);
+  color: light-dark(#166534, #000);
   padding: 0.1em 0.2em;
   border-radius: 3px;
 }
 
 .diff-content mark.diff-removed {
-  background: #fef2f2;
-  color: #dc2626;
+  background: light-dark(#fef2f2, #ef4444);
+  color: light-dark(#dc2626, #000);
   padding: 0.1em 0.2em;
   border-radius: 3px;
   text-decoration: line-through;
@@ -152,11 +163,11 @@
 .instructions {
   text-align: center;
   padding: 3rem 2rem;
-  color: #666;
+  opacity: 0.8;
 }
 
 .instructions h2 {
-  color: #374151;
+  color: inherit;
   margin-bottom: 1rem;
 }
 
@@ -174,8 +185,8 @@
   text-align: center;
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid #e5e5e5;
-  color: #666;
+  border-top: 1px solid light-dark(#e5e5e5, #404040);
+  opacity: 0.8;
   font-size: 0.9rem;
 }
 
@@ -195,7 +206,7 @@
   
   .diff-panel {
     border-right: none;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid light-dark(#e5e5e5, #404040);
   }
   
   .diff-panel:last-child {

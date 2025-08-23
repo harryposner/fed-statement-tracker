@@ -17,11 +17,18 @@ export default function StatementSelector({
     new Date(b.date).getTime() - new Date(a.date).getTime()
   );
 
-  const renderStatementOption = (statement: FOMCStatement) => (
-    <option key={statement.id} value={statement.id}>
-      {format(parseISO(statement.date), 'MMM dd, yyyy')} - {statement.title}
-    </option>
-  );
+  const renderStatementOption = (statement: FOMCStatement) => {
+    const date = format(parseISO(statement.date), 'MMM dd, yyyy');
+    const truncatedTitle = statement.title.length > 50 
+      ? statement.title.substring(0, 50) + '...' 
+      : statement.title;
+    
+    return (
+      <option key={statement.id} value={statement.id} title={`${date} - ${statement.title}`}>
+        {date} - {truncatedTitle}
+      </option>
+    );
+  };
 
   const handleSelectChange = (value: string, position: 0 | 1) => {
     const statement = statements.find(s => s.id === value);

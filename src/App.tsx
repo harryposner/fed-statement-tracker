@@ -8,9 +8,21 @@ import type { FOMCStatement } from './types';
 import './App.css';
 
 function App() {
-  const [selectedStatements, setSelectedStatements] = useState<[FOMCStatement | null, FOMCStatement | null]>([null, null]);
-  const [selectedType, setSelectedType] = useState<string>('all');
-  const [diffMode, setDiffMode] = useState<'words' | 'sentences'>('sentences');
+  // Get the two most recent meeting statements for default comparison
+  const defaultStatements = useMemo(() => {
+    const meetingStatements = statements
+      .filter(s => s.type === 'meeting')
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+      .slice(0, 2);
+    
+    return meetingStatements.length >= 2 
+      ? [meetingStatements[1], meetingStatements[0]] as [FOMCStatement, FOMCStatement] // older first, newer second
+      : [null, null] as [FOMCStatement | null, FOMCStatement | null];
+  }, []);
+
+  const [selectedStatements, setSelectedStatements] = useState<[FOMCStatement | null, FOMCStatement | null]>(defaultStatements);
+  const [selectedType, setSelectedType] = useState<string>('meeting');
+  const [diffMode, setDiffMode] = useState<'words' | 'sentences'>('words');
   const [viewMode, setViewMode] = useState<'side-by-side' | 'unified'>('side-by-side');
 
   const filteredStatements = useMemo(() => {

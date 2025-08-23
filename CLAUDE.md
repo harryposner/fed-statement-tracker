@@ -23,6 +23,9 @@ npm run lint
 
 # Preview production build
 npm run preview
+
+# Scrape FOMC statements from Federal Reserve website
+npm run scrape [-- --year=2024 --verbose]
 ```
 
 ## Architecture Overview
@@ -73,6 +76,24 @@ Statement content in Markdown format...
 ```
 
 The Vite plugin automatically generates `src/data/generated-statements.ts` from these files during build.
+
+## Data Collection
+
+**Automated Scraping:**
+Use the scraper script to fetch statements from federalreserve.gov:
+```bash
+npm run scrape              # Current year
+npm run scrape -- --year=2019 --verbose  # Specific year with logging
+npm run scrape -- --year=2006            # Historical data (2006-2019)
+```
+
+The scraper:
+- Supports years 2006-present with automatic format detection
+- Fetches FOMC press releases from Federal Reserve website  
+- Extracts statement text and metadata automatically
+- Generates properly formatted Markdown files
+- Classifies and filters to only regular meeting statements
+- Handles rate limiting and error recovery
 
 ## Development Environment
 

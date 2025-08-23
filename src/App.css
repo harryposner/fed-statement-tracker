@@ -145,6 +145,14 @@
   font-size: 0.95rem;
 }
 
+.diff-content p {
+  margin: 0 0 1em 0;
+}
+
+.diff-content p:last-child {
+  margin-bottom: 0;
+}
+
 .diff-content mark.diff-added {
   background: light-dark(#dcfce7, #22c55e);
   color: light-dark(#166534, #000);

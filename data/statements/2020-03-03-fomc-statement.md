@@ -1,0 +1,19 @@
+---
+id: 2020-03-03-fomc-statement
+date: 2020-03-03
+title: Federal Reserve issues FOMC statement
+type: meeting
+url: https://www.federalreserve.gov/newsevents/pressreleases/monetary20200303a.htm
+---
+
+March 03, 2020
+
+For release at 10:00 a.m. EST
+
+The fundamentals of the U.S. economy remain strong. However, the coronavirus poses evolving risks to economic activity. In light of these risks and in support of achieving its maximum employment and price stability goals, the Federal Open Market Committee decided today to lower the target range for the federal funds rate by 1/2 percentage point, to 1 to 1‑1/4 percent. The Committee is closely monitoring developments and their implications for the economic outlook and will use its tools and act as appropriate to support the economy.
+
+Voting for the monetary policy action were Jerome H. Powell, Chair; John C. Williams, Vice Chair; Michelle W. Bowman; Lael Brainard; Richard H. Clarida; Patrick Harker; Robert S. Kaplan; Neel Kashkari; Loretta J. Mester; and Randal K. Quarles.
+
+For media inquiries, call 202-452-2955.
+
+Implementation Note issued March 3, 2020

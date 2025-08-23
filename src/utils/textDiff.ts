@@ -18,24 +18,33 @@ export function createTextDiff(oldText: string, newText: string, mode: 'words' |
 
 export function preprocessStatement(text: string): string {
   return text
-    .replace(/\s+/g, ' ')
-    .replace(/\n{2,}/g, '\n\n')
+    .replace(/[ \t]+/g, ' ')     // Replace multiple spaces/tabs with single space
+    .replace(/\n{3,}/g, '\n\n')  // Replace 3+ newlines with double newlines
     .trim();
 }
 
 export function highlightDifferences(changes: Change[]): string {
   return changes
     .map(change => {
+      let content = '';
       switch (change.type) {
         case 'added':
-          return `<mark class="diff-added">${escapeHtml(change.value)}</mark>`;
+          content = `<mark class="diff-added">${escapeHtml(change.value)}</mark>`;
+          break;
         case 'removed':
-          return `<mark class="diff-removed">${escapeHtml(change.value)}</mark>`;
+          content = `<mark class="diff-removed">${escapeHtml(change.value)}</mark>`;
+          break;
         default:
-          return escapeHtml(change.value);
+          content = escapeHtml(change.value);
       }
+      
+      // Convert double newlines to paragraph breaks
+      return content.replace(/\n\n/g, '</p><p>');
     })
-    .join('');
+    .join('')
+    .replace(/^/, '<p>')  // Add opening <p> tag at start
+    .replace(/$/, '</p>') // Add closing </p> tag at end
+    .replace(/<p><\/p>/g, ''); // Remove empty paragraphs
 }
 
 function escapeHtml(unsafe: string): string {

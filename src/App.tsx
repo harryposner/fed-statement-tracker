@@ -3,7 +3,7 @@ import StatementSelector from './components/StatementSelector';
 import FilterControls from './components/FilterControls';
 import DiffViewer from './components/DiffViewer';
 import { createTextDiff, preprocessStatement } from './utils/textDiff';
-import { sampleStatements } from './data/sampleStatements';
+import { statements } from './data/generated-statements';
 import type { FOMCStatement } from './types';
 import './App.css';
 
@@ -14,8 +14,8 @@ function App() {
   const [viewMode, setViewMode] = useState<'side-by-side' | 'unified'>('side-by-side');
 
   const filteredStatements = useMemo(() => {
-    if (selectedType === 'all') return sampleStatements;
-    return sampleStatements.filter(statement => statement.type === selectedType);
+    if (selectedType === 'all') return statements;
+    return statements.filter(statement => statement.type === selectedType);
   }, [selectedType]);
 
   const handleStatementSelect = (statement: FOMCStatement, position: 0 | 1) => {

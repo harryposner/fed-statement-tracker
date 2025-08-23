@@ -30,10 +30,11 @@ npm run preview
 This is a React TypeScript application for comparing Federal Reserve FOMC statements using a specialized text diff engine. The architecture follows a centralized state management pattern with all major state managed in the root App component.
 
 **Key Data Flow:**
-1. Sample FOMC statements are imported from `src/data/sampleStatements.ts`
-2. App component filters statements by type and manages selection state
-3. Text diff calculation happens in `src/utils/textDiff.ts` using the `diff` library
-4. Results are rendered via DiffViewer component with custom HTML highlighting
+1. FOMC statements are stored as Markdown files in `data/statements/` with YAML frontmatter
+2. Custom Vite plugin (`vite-plugin-statements.ts`) parses Markdown at build time into `src/data/generated-statements.ts`
+3. App component imports generated statements, filters by type, and manages selection state
+4. Text diff calculation happens in `src/utils/textDiff.ts` using the `diff` library
+5. Results are rendered via DiffViewer component with custom HTML highlighting
 
 **Component Hierarchy:**
 - `App.tsx` - Root component managing all state and coordination
@@ -54,17 +55,24 @@ This is a React TypeScript application for comparing Federal Reserve FOMC statem
 
 ## Adding New Statements
 
-Add statements to `src/data/sampleStatements.ts` following the FOMCStatement interface:
-```typescript
-{
-  id: 'YYYY-MM-DD',
-  date: 'YYYY-MM-DD', 
-  title: 'Statement title',
-  type: 'meeting' | 'longer-run-goals' | 'minutes' | 'other',
-  content: 'Full statement text...',
-  url: 'https://federalreserve.gov/...' // Optional
-}
+Create new Markdown files in `data/statements/` with YAML frontmatter. The raw Markdown content is parsed at build time and not included in the bundle.
+
+**Filename format:** `YYYY-MM-DD-description.md`
+
+**File structure:**
+```markdown
+---
+id: unique-id
+date: YYYY-MM-DD
+title: Statement title
+type: meeting | longer-run-goals | minutes | other
+url: https://federalreserve.gov/... # Optional
+---
+
+Statement content in Markdown format...
 ```
+
+The Vite plugin automatically generates `src/data/generated-statements.ts` from these files during build.
 
 ## Development Environment
 

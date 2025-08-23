@@ -141,3 +141,6 @@ vite.config.ts.timestamp-*
 
 
 .claude/
+
+# Generated files
+src/data/generated-statements.ts

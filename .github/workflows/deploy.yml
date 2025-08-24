@@ -21,19 +21,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         
-      - name: Install Nix
-        uses: DeterminateSystems/nix-installer-action@main
-        
-      - name: Run the Magic Nix Cache
-        uses: DeterminateSystems/magic-nix-cache-action@main
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
         
       - name: Setup Pages
         uses: actions/configure-pages@v4
         
-      - name: Install dependencies and build
-        run: |
-          nix develop --command npm install
-          nix develop --command npm run build
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Build
+        run: npm run build
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

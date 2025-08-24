@@ -1,0 +1,19 @@
+---
+id: 2019-01-29-longer-run-goals
+date: 2019-01-29
+title: Statement on Longer-Run Goals and Monetary Policy Strategy
+type: longer-run-goals
+url: https://www.federalreserve.gov/monetarypolicy/files/FOMC_LongerRunGoals_201901.pdf
+---
+
+Adopted effective January 24, 2012; as amended effective January 29, 2019
+
+The Federal Open Market Committee (FOMC) is firmly committed to fulfilling its statutory mandate from the Congress of promoting maximum employment, stable prices, and moderate long-term interest rates. The Committee seeks to explain its monetary policy decisions to the public as clearly as possible. Such clarity facilitates well-informed decisionmaking by households and businesses, reduces economic and financial uncertainty, increases the effectiveness of monetary policy, and enhances transparency and accountability, which are essential in a democratic society.
+
+Inflation, employment, and long-term interest rates fluctuate over time in response to economic and financial disturbances. Moreover, monetary policy actions tend to influence economic activity and prices with a lag. Therefore, the Committee’s policy decisions reflect its longer-run goals, its medium-term outlook, and its assessments of the balance of risks, including risks to the financial system that could impede the attainment of the Committee’s goals.
+
+The inflation rate over the longer run is primarily determined by monetary policy, and hence the Committee has the ability to specify a longer-run goal for inflation. The Committee reaffirms its judgment that inflation at the rate of 2 percent, as measured by the annual change in the price index for personal consumption expenditures, is most consistent over the longer run with the Federal Reserve’s statutory mandate. The Committee would be concerned if inflation were running persistently above or below this objective. Communicating this symmetric inflation goal clearly to the public helps keep longer-term inflation expectations firmly anchored, thereby fostering price stability and moderate long-term interest rates and enhancing the Committee’s ability to promote maximum employment in the face of significant economic disturbances. The maximum level of employment is largely determined by nonmonetary factors that affect the structure and dynamics of the labor market. These factors may change over time and may not be directly measurable. Consequently, it would not be appropriate to specify a fixed goal for employment; rather, the Committee’s policy decisions must be informed by assessments of the maximum level of employment, recognizing that such assessments are necessarily uncertain and subject to revision. The Committee considers a wide range of indicators in making these assessments. Information about Committee participants’ estimates of the longer-run normal rates of output growth and unemployment is published four times per year in the FOMC’s Summary of Economic Projections. For example, in the most recent projections, the median of FOMC participants’ estimates of the longerrun normal rate of unemployment was 4.4 percent.
+
+In setting monetary policy, the Committee seeks to mitigate deviations of inflation from its longer-run goal and deviations of employment from the Committee’s assessments of its maximum level. These objectives are generally complementary. However, under circumstances in which the Committee judges that the objectives are not complementary, it follows a balanced approach in promoting them, taking into account the magnitude of the deviations and the potentially different time horizons over which employment and inflation are projected to return to levels judged consistent with its mandate.
+
+The Committee intends to reaffirm these principles and to make adjustments as appropriate at its annual organizational meeting each January.

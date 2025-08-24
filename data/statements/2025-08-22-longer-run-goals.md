@@ -1,0 +1,23 @@
+---
+id: 2025-08-22-longer-run-goals
+date: 2025-08-22
+title: Statement on Longer-Run Goals and Monetary Policy Strategy
+type: longer-run-goals
+url: https://www.federalreserve.gov/monetarypolicy/files/FOMC_LongerRunGoals.pdf
+---
+
+Adopted effective January 24, 2012; as amended effective August 22, 2025
+
+The Federal Open Market Committee (FOMC) is firmly committed to fulfilling its statutory mandate from Congress of promoting maximum employment, stable prices, and moderate long-term interest rates. The Committee seeks to explain its monetary policy decisions to the public as clearly as possible. Such clarity facilitates well-informed decisionmaking by households and businesses, reduces economic and financial uncertainty, increases the effectiveness of monetary policy, and enhances transparency and accountability, which are essential in a democratic society.
+
+The Committee’s monetary policy strategy is designed to promote maximum employment and stable prices across a broad range of economic conditions. Employment, inflation, and long-term interest rates fluctuate over time in response to economic and financial disturbances. Monetary policy plays an important role in stabilizing the economy in response to these disturbances. The Committee’s primary means of adjusting the stance of monetary policy is through changes in the target range for the federal funds rate. The Committee is prepared to use its full range of tools to achieve its maximum employment and price stability goals, particularly if the federal funds rate is constrained by its effective lower bound.
+
+Durably achieving maximum employment fosters broad-based economic opportunities and benefits for all Americans. The Committee views maximum employment as the highest level of employment that can be achieved on a sustained basis in a context of price stability. The maximum level of employment is not directly measurable and changes over time owing largely to nonmonetary factors that affect the structure and dynamics of the labor market. Consequently, it would not be appropriate to specify a fixed goal for employment; rather, the Committee’s policy decisions must be informed by assessments of the maximum level of employment, recognizing that such assessments are necessarily uncertain and subject to revision. The Committee considers a wide range of indicators in making these assessments.
+
+Price stability is essential for a sound and stable economy and supports the well-being of all Americans. The inflation rate over the longer run is primarily determined by monetary policy, and hence the Committee can specify a longer-run goal for inflation. The Committee reaffirms its judgment that inflation at the rate of 2 percent, as measured by the annual change in the price index for personal consumption expenditures, is most consistent over the longer run with the Federal Reserve’s statutory maximum employment and price stability mandates. The Committee judges that longer-term inflation expectations that are well anchored at 2 percent foster price stability and moderate long-term interest rates and enhance the Committee’s ability to promote maximum employment in the face of significant economic disturbances. The Committee is prepared to act forcefully to ensure that longer- term inflation expectations remain well anchored.
+
+Monetary policy actions tend to influence economic activity, employment, and prices with a lag. Moreover, sustainably achieving maximum employment and price stability depends on a stable financial system. Therefore, the Committee’s policy decisions reflect its longer-run goals, its medium- term outlook, and its assessments of the balance of risks, including risks to the financial system that could impede the attainment of the Committee’s goals.
+
+The Committee’s employment and inflation objectives are generally complementary. However, if the Committee judges that the objectives are not complementary, it follows a balanced approach in promoting them, taking into account the extent of departures from its goals and the potentially different time horizons over which employment and inflation are projected to return to levels judged consistent with its mandate. The Committee recognizes that employment may at times run above real-time assessments of maximum employment without necessarily creating risks to price stability.
+
+The Committee intends to review these principles and to make adjustments as appropriate at its annual organizational meeting each January, and to undertake roughly every 5 years a thorough public review of its monetary policy strategy, tools, and communication practices.

@@ -4,4 +4,8 @@ import { statementsPlugin } from './vite-plugin-statements'
 
 export default defineConfig({
   plugins: [react(), statementsPlugin()],
+  base: '/',
+  build: {
+    outDir: 'dist',
+  },
 })

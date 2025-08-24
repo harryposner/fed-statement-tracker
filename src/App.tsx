@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import StatementSelector from './components/StatementSelector';
 import FilterControls from './components/FilterControls';
 import DiffViewer from './components/DiffViewer';
